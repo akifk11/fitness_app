@@ -1,0 +1,30 @@
+.container-yag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+.card-yag {
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.17);
+}
+.giris{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.giris label{
+    margin-bottom: 5px;
+}
+.card-yag button {
+    font-size:large;
+}
+
+.card-yag h4{
+    text-align: center;
+    padding: 10px;
+}

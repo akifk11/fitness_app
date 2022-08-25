@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header'
+import Mainpage from './components/Mainpage';
+import Bminedir from "./components/bmi/Bminedir"
+import Bmihesapla from "./components/bmi/Bmihesapla"
+import Yagoraninedir from "./components/yag/Yagoraninedir"
+import Yagoranihesapla from "./components/yag/Yagoranihesapla"
+import Program from "./components/program/Program"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div >
+        <Header />
+      </div>
+
+
+
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/bminedir" element={<Bminedir />} />
+        <Route path="/bmihesapla" element={<Bmihesapla />} />
+        <Route path="/yagoraninedir" element={<Yagoraninedir />} />
+        <Route path="/yagoranihesapla" element={<Yagoranihesapla />} />
+        <Route path="/program" element={<Program />} />
+
+        {/* <Route path="*" element={<ErrorPage />} /> */}
+      </Routes>
     </div>
   );
 }

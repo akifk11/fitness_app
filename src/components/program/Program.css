@@ -1,0 +1,42 @@
+.program-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.program-container{
+    margin-top: 30px;
+}
+.program-form{
+    width: 50%;
+    display: flex;justify-content: center;
+}
+
+.input-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    width: 80%;     
+}
+.input-header button {
+    margin-bottom: 10px;
+}
+.input-header input {
+    padding: 10px;
+}
+
+.program-list{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.program-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    width: 30%;
+}

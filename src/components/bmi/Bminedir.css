@@ -1,0 +1,26 @@
+.bmi-container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-container{
+    height: 60vh;
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+}
+.sol {
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    padding: 10px;
+}
+.sag {
+    height: 100%;
+    width: 50%;
+    background-color: brown;
+}
