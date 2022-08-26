@@ -8,6 +8,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .icon i {
+    font-size: x-large;
+  }
   .links{
     width: 60%;
   }
@@ -17,6 +20,15 @@
       justify-content: space-around;
       align-items: center;
   }
+  .links span {
+    
+    
+  }
+  .links a{
+    text-decoration: none;
+    color: black;
+  }
   .active{
     color:red;
   }
+ 

@@ -12,15 +12,33 @@
     border: 2px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: flex;
+    border-radius: 10px;
 }
 .sol {
     height: 100%;
     width: 50%;
-    background-color: aqua;
+  
     padding: 10px;
 }
 .sag {
     height: 100%;
     width: 50%;
-    background-color: brown;
+    padding-left: 20px;
+    
+}
+.sag p {
+    font-size: 25px;
+    font-weight: 400;
+}
+.dusuk{
+    color: #03a9f4;
+}
+.normal{
+    color:#4caf50;
+}
+.fazla{
+    color: #ff9800;
+}
+.obezite{
+    color:#f5554a;
 }

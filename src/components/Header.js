@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Header.css"
 
 const Header = () => {
@@ -7,7 +7,9 @@ const Header = () => {
         <div className="header">
 
             <div className="icon">
-                <h4>fitness app</h4>
+                <a href="/">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </a>
             </div>
             <div className="links">
                 <ul>
@@ -18,7 +20,7 @@ const Header = () => {
                                     isActive ? "active" : undefined
                                 }
                             >
-                                yagoraninedir
+                                Yağ oranı nedir?
                             </span>
                         )}
                     </NavLink></li>
@@ -29,7 +31,7 @@ const Header = () => {
                                     isActive ? "active" : undefined
                                 }
                             >
-                                yagoranihesapla
+                                Yağ oranı hesapla
                             </span>
                         )}
                     </NavLink></li>
@@ -40,7 +42,7 @@ const Header = () => {
                                     isActive ? "active" : undefined
                                 }
                             >
-                                bminedir
+                                Vki nedir?
                             </span>
                         )}
                     </NavLink></li>
@@ -51,7 +53,7 @@ const Header = () => {
                                     isActive ? "active" : undefined
                                 }
                             >
-                                bmihesapla
+                                Vki hesapla
                             </span>
                         )}
                     </NavLink></li>

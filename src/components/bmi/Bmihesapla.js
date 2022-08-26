@@ -21,10 +21,10 @@ const Bmihesapla = () => {
             let imgSrc = ""
             console.log(vki)
             if (1 <= vki && vki < 18.5) {
-                setMesaj("underweight")
+                setMesaj("Düşük kilo")
                 imgSrc = require("../img/underweight.png")
             } else if (18.5 <= vki && vki < 24.9) {
-                setMesaj("normal kütle")
+                setMesaj("Normal kütle")
                 imgSrc = require("../img/normal.png")
             } else if (24.9 <= vki && vki < 29.9) {
                 setMesaj("aşırı kilo")
