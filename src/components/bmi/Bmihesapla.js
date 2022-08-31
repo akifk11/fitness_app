@@ -60,7 +60,7 @@ const Bmihesapla = () => {
                 <input type="number" value={kilo} onChange={(e) => {
                     setKilo(e.target.value)
                 }} placeholder="kilo" />
-                <h6>boy(cm)</h6>
+                <h6>boy(m)</h6>
                 <input type="number" value={boy} onChange={(e) => {
                     setBoy(e.target.value)
                 }} placeholder="boy" />

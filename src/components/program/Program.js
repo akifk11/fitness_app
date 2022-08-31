@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Program.css';
 
 function App() {
@@ -6,6 +6,13 @@ function App() {
     const [todo, setTodo] = useState("");
     const [todos, setTodos] = useState([]);
 
+    useEffect(() => {
+        const gelenTodo = JSON.parse(localStorage.getItem('todos'))
+        setTodos(gelenTodo);
+    }, [])
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos))
+    }, [todos])
 
     function addItem() {
 
@@ -45,7 +52,7 @@ function App() {
                         value={todo}
                         onChange={e => setTodo(e.target.value)}
                     />
-                    <button type='submit'>Add</button>
+                    <button type='submit'>Ekle</button>
                 </div>
             </form>
 

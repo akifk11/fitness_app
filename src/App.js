@@ -15,9 +15,6 @@ function App() {
       <div >
         <Header />
       </div>
-
-
-
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/bminedir" element={<Bminedir />} />
