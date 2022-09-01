@@ -1,7 +1,7 @@
 import React from "react";
-import "./Bminedir.css"
+import "./Vkinedir.css"
 
-const Bminedir = () => {
+const Vkinedir = () => {
     return <div className="bmi-container">
         <div className="card-container">
             <div className="sol">
@@ -21,4 +21,4 @@ const Bminedir = () => {
     </div>;
 };
 
-export default Bminedir;
+export default Vkinedir;

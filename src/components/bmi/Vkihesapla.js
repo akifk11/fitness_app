@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./Bmihesapla.css"
+import "./Vkihesapla.css"
 
 
 
 
-const Bmihesapla = () => {
+const Vkihesapla = () => {
     const [boy, setBoy] = useState(0)
     const [kilo, setKilo] = useState(0)
     const [mesaj, setMesaj] = useState('')
@@ -33,7 +33,7 @@ const Bmihesapla = () => {
                 setMesaj("obezite tehlikesi")
                 imgSrc = require("../img/obese.png")
             }
-            console.log(imgSrc)
+
 
         }
     }
@@ -55,7 +55,7 @@ const Bmihesapla = () => {
     return <> <div className="container">
         <div className="card">
             <form onSubmit={hesapla} action="">
-                <h2>Bmi hesaplama</h2>
+                <h2>Vki hesaplama</h2>
                 <h6>kilo(kg)</h6>
                 <input type="number" value={kilo} onChange={(e) => {
                     setKilo(e.target.value)
@@ -80,4 +80,4 @@ const Bmihesapla = () => {
     </>
 };
 
-export default Bmihesapla;
+export default Vkihesapla;
